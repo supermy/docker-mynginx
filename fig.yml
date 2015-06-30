@@ -1,0 +1,41 @@
+#启动web
+web:
+  image: jamesmo/mynginx:2.1
+  links:
+    - myredis:myredis
+    - mydb:mydb
+  ports:
+    - "80:80"
+  volumes_from:
+    - data
+
+#常用工具集合
+data:
+  image: busybox
+  command: /bin/true
+  volumes:
+      - /Users/moyong/project/env-myopensource/3-tools/mytools/web+app/mynginx/www:/data/www/
+      - /Users/moyong/docker-share/logs/web/:/usr/local/nginx/logs/
+      - /Users/moyong/project/env-myopensource/3-tools/mytools/web+app/mynginx/nginx.d/lua/:/usr/local/nginx/conf/nginx.d/lua/ #配置文件,fix.me
+
+myredis:
+  image: redis:latest
+  ports:
+      - "6379:6379"
+
+
+mydb:
+  image: mysql:latest
+  environment:
+    MYSQL_USER: java
+    MYSQL_PASSWORD: java
+    MYSQL_DATABASE: javatest
+    MYSQL_ROOT_PASSWORD: mysql
+  ports:
+    - "3306:3306"
+
+# echo 'hello'>index.html
+#docker run -d -p 8080:80 --name testnginx -v /home/utgard/www/:/data/www/ mynginx_app
+#docker run -d -p 8080:80 --name testnginx -v /var/www/:/data/www/ mynginx_app
+
+
