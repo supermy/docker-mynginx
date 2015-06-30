@@ -127,6 +127,6 @@ EXPOSE 80 443
 CMD ["/etc/my_init.d/nginx.sh"]
 
 # build
-# docker build -t supermy/mynginx:2.1 .
+# docker build -t supermy/docker-mynginx:2.1 .
 # userage
 # docker run -d -p 8080:80 --name test -v /home/utgard/www/:/data/www/ mynginx_web
