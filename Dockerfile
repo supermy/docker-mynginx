@@ -1,6 +1,6 @@
 FROM    debian:latest
 
-MAINTAINER jamesmo <springclick@gmail.com>
+MAINTAINER supermy <springclick@gmail.com>
 
 RUN sed -i '1,3d'   /etc/apt/sources.list
 RUN echo '#hello'>> /etc/apt/sources.list
@@ -127,6 +127,6 @@ EXPOSE 80 443
 CMD ["/etc/my_init.d/nginx.sh"]
 
 # build
-# docker build -t jamesmo/mynginx:2.1 .
+# docker build -t supermy/mynginx:2.1 .
 # userage
 # docker run -d -p 8080:80 --name test -v /home/utgard/www/:/data/www/ mynginx_web

@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../../../../basic-web" value="1364019036000" />
-        <entry key="$PROJECT_DIR$/../../../../gs-accessing-mongodb-data-rest-master/complete" value="1419779083000" />
-        <entry key="$PROJECT_DIR$/../../../../gs-messaging-jms/complete" value="1420854587000" />
-        <entry key="$PROJECT_DIR$/../../../../spring-data-rest/complete" value="1420601917000" />
-        <entry key="$PROJECT_DIR$/../../../../spring-mongodb-data-rest/complete" value="1420441711000" />
-        <entry key="$PROJECT_DIR$/../../../../spring-mysql-data-rest/complete" value="1420618127000" />
-        <entry key="$PROJECT_DIR$/../../../../spring-securing-web/complete" value="1420724317000" />
-        <entry key="$PROJECT_DIR$/../../../../spring_data_rest/complete" value="1419779083000" />
-        <entry key="$PROJECT_DIR$/../../../../spring_web_template" value="1419685785000" />
-      </map>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
